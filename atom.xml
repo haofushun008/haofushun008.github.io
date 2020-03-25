@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://haofushun008/happylife</id>
+    <title>郝同学的日常</title>
+    <updated>2020-03-25T15:46:39.835Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://haofushun008/happylife"/>
+    <link rel="self" href="https://haofushun008/happylife/atom.xml"/>
+    <subtitle>人生只道是平常</subtitle>
+    <logo>https://haofushun008/happylife/images/avatar.png</logo>
+    <icon>https://haofushun008/happylife/favicon.ico</icon>
+    <rights>All rights reserved 2020, 郝同学的日常</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello world]]></title>
+        <id>https://haofushun008/happylife/post/hello-world/</id>
+        <link href="https://haofushun008/happylife/post/hello-world/">
+        </link>
+        <updated>2020-02-11T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>https://s2.ax1x.com/2020/02/08/1Wy4u8.md.gif</p>
+]]></content>
+    </entry>
+</feed>
