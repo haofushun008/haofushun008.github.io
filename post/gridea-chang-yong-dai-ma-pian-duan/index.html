@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>我的朋友们 | 郝先森的日常</title>
+<title>网页代码片段 | 郝先森的日常</title>
 <meta name="description" content="人生只道是平常" />
 <link rel="shortcut icon" href="https://thedoctor.top/happylife/favicon.ico">
 <link rel="stylesheet" href="https://thedoctor.top/happylife/styles/main.css">
@@ -14,11 +14,18 @@
 <script src="https://thedoctor.top/happylife/media/js/view-image.min.js"></script>
 <script src="https://thedoctor.top/happylife/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://thedoctor.top/happylife/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="全站 Site
+首页：themeConfig.domain
+站点名：themeConfig.siteName
+站点描述：themeConfig.siteDescription
+全站文章数：site.posts.length
+全站标签数：si..." />
+    <meta name="keywords" content="网页" />
+    <script src="https://thedoctor.top/happylife/media/js/waterfall.min.js"></script>
+    <script src="https://thedoctor.top/happylife/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -91,24 +98,189 @@
         </div>
       </div>
 
-      <main id="friends" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://ae01.alicdn.com/kf/Haf1047ed282f45ce956d83f9d3cf0b7b2.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-02-06"><i class="fa fa-calendar"></i><span class="lately">2 个月前</span></time>
+              
+              <a href="http://haofushun008.github.io/happylife/post/gridea-chang-yong-dai-ma-pian-duan/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/gridea-chang-yong-dai-ma-pian-duan/"> </span>
+              </a>
+              <span id="/gridea-chang-yong-dai-ma-pian-duan/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="http://haofushun008.github.io/happylife/tag/TfrDYF6aC/" class="ctag ctag-0 ctag-TfrDYF6aC" aria-label="">网页</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">网页代码片段</h1>
+            </div>
+          </div>
+        </div>  
+
         <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h3 id="全站-site">全站 Site</h3>
+<p>首页：<code>themeConfig.domain</code><br>
+站点名：<code>themeConfig.siteName</code><br>
+站点描述：<code>themeConfig.siteDescription</code><br>
+全站文章数：<code>site.posts.length</code><br>
+全站标签数：<code>site.tags.length</code></p>
+<pre><code class="language-html">共 &lt;%= site.posts.length %&gt; 篇日志
+</code></pre>
+<pre><code class="language-html">### 菜单
+  &lt;% menus.forEach(function(menu) { %&gt;
+    &lt;a href=&quot;&lt;%= menu.link %&gt;&quot;&gt;&lt;%= menu.name %&gt;&lt;/a&gt;
+&lt;% }); %&gt;   
+</code></pre>
+<h3 id="网页标题优化-sitetitle">网页标题优化 siteTitle</h3>
+<pre><code class="language-html"> &lt;code class=&quot; language-js&quot;&gt;&lt;%- include('./includes/head', { siteTitle: themeConfig.siteName }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `文章归档 | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `标签列表 | ${themeConfig.siteName}` }) %&gt;&lt;/code&gt; 
+</code></pre>
+<h3 id="文章-post">文章 Post</h3>
+<pre><code class="language-html">标题：`post.title`
+链接：`post.link`
+</code></pre>
+<p>文章标题：</p>
+<pre><code class="language-html"> &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;&lt;%= post.title %&gt;&lt;/a&gt; 
+</code></pre>
+<p>文章SEO</p>
+<pre><code class="language-html"> &lt;code class=&quot; language-html&quot;&gt;&lt;meta name=&quot;description&quot; content=&quot;&lt;%- post.description %&gt;&quot; /&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%- post.tags.map(tag =&gt; tag.name).join(',') %&gt;&quot; /&gt; 
+</code></pre>
+<p>发布时间：<code>post.dateFormat</code><br>
+显示相对时间：</p>
+<pre><code class="language-html"> &lt;%= site.utils.moment(post.date).locale('zh-cn').fromNow() %&gt; 
+</code></pre>
+<p>标签名：<code>post.tags</code><br>
+文章阅读时间：<code>stats.text</code> //3 min read<br>
+文章字数：<code>stats.words</code> //3000</p>
+<p>显示全部标签名，多个用顿号分开：</p>
+<pre><code class="language-html"> &lt;% post.tags.forEach(function(tag, index) { %&gt;
+    &lt;a href=&quot;&lt;%= tag.link %&gt;&quot;&gt;
+        &lt;%= tag.name %&gt;
+        &lt;% if (index !== post.tags.length - 1) { %&gt;
+            、
+        &lt;% } %&gt;
+    &lt;/a&gt;
+&lt;% }); %&gt; 
+</code></pre>
+<p>显示单个标签名：</p>
+<pre><code class="language-html">  &lt;% if (post.tags[0]) { %&gt;
+    &lt;a href=&quot;&lt;%= post.tags[0].link %&gt;&quot;&gt;&lt;%= post.tags[0].name %&gt;&lt;/a&gt;
+&lt;% }; %&gt;
+</code></pre>
+<p>封面图：<code>post.feature</code></p>
+<pre><code class="language-html">  &lt;% if (themeConfig.showFeatureImage &amp;&amp; post.feature) { %&gt;
+    &lt;img src=&quot;&lt;%= post.feature %&gt;&quot;&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>文章摘要：<code>post.abstract</code> 显示文章 <code>&lt;!--more--&gt;</code> 前的内容<br>
+文章全文：<code>post.content</code></p>
+<pre><code class="language-html">  &lt;% if (post.abstract) { %&gt;
+    &lt;%- post.abstract %&gt;
+    &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;阅读全文&lt;/a&gt;
+&lt;% }else{ %&gt;
+    &lt;%- post.content %&gt;
+    &lt;a href=&quot;&lt;%= post.link %&gt;#comments&quot;&gt;发表评论&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>结合以上两者，如果有设置more标签，则显示部分和“阅读全文”链接，若无则全文显示并显示“发表评论”链接。</p>
+<h3 id="导航-pagination">导航 Pagination</h3>
+<p>上下篇日志：</p>
+<pre><code class="language-html"> &lt;% if (post.prevPost) { %&gt;
+    &lt;a href=&quot;&lt;%= post.prevPost.link %&gt;&quot;&gt;&lt;%= post.prevPost.title %&gt;&lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (post.nextPost) { %&gt;
+    &lt;a href=&quot;&lt;%= post.nextPost.link %&gt;&quot;&gt;&lt;%= post.nextPost.title %&gt;&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>文章列表：</p>
+<pre><code class="language-html"> &lt;% if (pagination.prev) { %&gt;
+    &lt;a href=&quot;&lt;%= pagination.prev %&gt;&quot;&gt;上一页&lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (pagination.next) { %&gt;
+    &lt;a href=&quot;&lt;%= pagination.next %&gt;&quot;&gt;下一页&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<h3 id="实用-jquery-代码">实用 jQuery 代码</h3>
+<pre><code class="language-javascript">//新窗口打开外链
+var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*)?(?:\?([^#]*))?(?:#(.*))?$/;
+var location_href = window.location.href.replace(parse_url,'$3');
+$('.post-excerpt a:not(:has(img)),.post-content a:not(:has(img)),.author-name a').hover(function() {
+    var this_href = $(this).attr('href');
+    var replace_href = this_href.replace(parse_url,'$3');
+    if ( this_href != replace_href &amp;&amp; location_href != replace_href){$(this).attr('target','_blank');}
+}); 
+</code></pre>
 
-          <div class="widget_tag_cloud tagcloud">
-          
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://s2.ax1x.com/2020/02/07/1cIbfH.png');"></div>
+                 <a href="http://haofushun008.github.io/happylife/post/markdown-ji-ben-yu-fa/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-02-07">2020-02-07</time>
+                  <h4 class="title white no-margin">Markdown 基本语法</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://thedoctor.top/happylife/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
-          
-          </div>
-        </div>
+              <div id="comments" class="bg-white hosted ">
+                <div class="clear"></div>
+<script>
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
+</script>
 
-        </div>
+              </div>
+            
+
+            </div>
           </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -258,6 +430,9 @@
     })
 </script>
     
+
+      
+    <script src="https://thedoctor.top/happylife/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->

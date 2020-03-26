@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://haofushun008.github.io/happylife/</id>
     <title>郝先森的日常</title>
-    <updated>2020-03-26T05:37:04.854Z</updated>
+    <updated>2020-03-26T05:48:56.229Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://haofushun008.github.io/happylife/"/>
     <link rel="self" href="http://haofushun008.github.io/happylife/atom.xml"/>
@@ -11,12 +11,304 @@
     <icon>http://haofushun008.github.io/happylife/favicon.ico</icon>
     <rights>All rights reserved 2020, 郝先森的日常</rights>
     <entry>
-        <title type="html"><![CDATA[Hello world]]></title>
-        <id>http://haofushun008.github.io/happylife/post/hello-world/</id>
-        <link href="http://haofushun008.github.io/happylife/post/hello-world/">
+        <title type="html"><![CDATA[Markdown音视频嵌入]]></title>
+        <id>http://haofushun008.github.io/happylife/post/markdown-yin-shi-pin-qian-ru/</id>
+        <link href="http://haofushun008.github.io/happylife/post/markdown-yin-shi-pin-qian-ru/">
         </link>
-        <updated>2020-02-11T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<p>https://s2.ax1x.com/2020/02/08/1Wy4u8.md.gif</p>
+        <updated>2020-03-03T04:09:44.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="md网易云音乐自适应嵌入">MD网易云音乐自适应嵌入</h3>
+<pre><code class="language-html">&lt;iframe frameborder=&quot;no&quot; border=&quot;1&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=100% height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+<blockquote>
+<p>auto=0手动；1自动</p>
+</blockquote>
+<iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1295824647&auto=0&height=66"></iframe>
+<h3 id="网页自适应嵌入">网页自适应嵌入</h3>
+<pre><code class="language-html">&lt;div id=&quot;music163player&quot;&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=100% height=52 src=&quot;//music.163.com/outchain/player?type=2&amp;id=572912887&amp;auto=1&amp;height=32&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=2&id=572912887&auto=1&height=32"></iframe>
+<h3 id="b站视频嵌入">B站视频嵌入</h3>
+<pre><code class="language-html">&lt;iframe height=&quot;400&quot; width=&quot;600&quot; src=&quot;//player.bilibili.com/player.html?aid=92389377&amp;cid=158161591&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+</code></pre>
+<center><iframe height="400" width="600" src="//player.bilibili.com/player.html?aid=92389377&cid=158161591&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></center>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown 基本语法]]></title>
+        <id>http://haofushun008.github.io/happylife/post/markdown-ji-ben-yu-fa/</id>
+        <link href="http://haofushun008.github.io/happylife/post/markdown-ji-ben-yu-fa/">
+        </link>
+        <updated>2020-02-07T02:52:22.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>markdown 是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。（实质转化为html）</p>
+</blockquote>
+<h3 id="1标题">1.标题：</h3>
+<h1 id="这是h1x1">这是H1：#x1</h1>
+<h2 id="这是h2x2">这是H2：#x2</h2>
+<h3 id="这是h3x3">这是H3：#x3</h3>
+<h4 id="这是h4x4">这是H4：#x4</h4>
+<h5 id="这是h5x5">这是H5：#x5</h5>
+<h6 id="这是h6x6">这是H6：#x6</h6>
+<h3 id="2列表-">2.列表：*、+、-</h3>
+<ul>
+<li>无序号一</li>
+<li>无序号二</li>
+<li>无序号三</li>
+</ul>
+<ol>
+<li>这是1.</li>
+<li>这是2.</li>
+<li>这是3.</li>
+</ol>
+<ul>
+<li>
+<p>阅读开始</p>
+<blockquote>
+<p>第一章</p>
+<blockquote>
+<p>第二章</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="3区块引用">3.区块引用</h3>
+<blockquote>
+<p>这是一个块&gt;,<br>
+还是一个块&gt;</p>
+<blockquote>
+<p>这是两个块&gt;&gt;</p>
+<blockquote>
+<p>这是三个块&gt;&gt;&gt;</p>
+</blockquote>
+<h4 id="这是两个块并加了">这是两个块&gt;&gt;，并加了####</h4>
+</blockquote>
+</blockquote>
+<h4 id=""></h4>
+<h3 id="4超链接">4.超链接</h3>
+<p>This is an <a href="http://baidu.com/" title="这是title">baidu.com</a>.</p>
+<blockquote>
+<p>格式：[baidu.com](http://www.baidu.com “这是title”)</p>
+</blockquote>
+<h4 id="图像格式-图像httpjpg-图像">图像格式 ！[图像](http://....jpg &quot;图像&quot;)</h4>
+<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2020/02/07/1c57zn.gif" alt="1c57zn.gif" loading="lazy"></figure>
+<h3 id="5代码块高亮">5.代码块高亮</h3>
+<pre><code class="language-java">/*
+ *这是注释
+ */
+public static void main(String[] args){
+    System.out.println(&quot;Hello world.&quot;);
+}
+</code></pre>
+<pre><code>// 这是注释
+public static void main(String[] args){
+    System.out.println(&quot;Hello world.&quot;);
+}
+</code></pre>
+<h3 id="6分割线使用三个-或三个-强调">6.分割线使用三个-或三个*、强调</h3>
+<hr>
+<hr>
+<p><strong>强调</strong>，一个星号包括是<em>斜体</em>，两个星号包括是<strong>加粗</strong></p>
+<h3 id="7表格">7.表格</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>男</td>
+<td>11</td>
+</tr>
+<tr>
+<td>王五</td>
+<td>男</td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
+<pre><code>格式：
+ 姓名 | 性别 | 年龄
+-----|-----|------
+ 张三 | 男  | 11 
+ 王五 | 男  | 22 
+</code></pre>
+<h3 id="8代码高亮"><strong>8.代码高亮</strong></h3>
+<blockquote>
+<p>语法：连续三个反引号，之间插入代码，第一行反引号后可以指定代码语言，注意两个缩进；</p>
+</blockquote>
+<pre><code>	```python
+	高亮代码
+	```
+</code></pre>
+<h3 id="9字体-字号-颜色"><strong>9.字体、字号、颜色</strong></h3>
+<pre><code class="language-html">&lt;font face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;
+</code></pre>
+<p><font face="黑体">黑体</font></p>
+<pre><code class="language-html">&lt;center&gt;居中&lt;/center&gt;
+</code></pre>
+<center>居中</center>
+<pre><code class="language-html">&lt;font color=blue&gt;蓝色&lt;/font&gt;
+</code></pre>
+<p><font color=blue>蓝色</font></p>
+<pre><code class="language-html">&lt;font color=red size=12 face=&quot;黑体&quot;&gt;红色12号黑体&lt;/font&gt;
+</code></pre>
+<p><font color=red size=12 face="黑体">红色12号黑体</font></p>
+<pre><code class="language-html">&lt;table&gt;&lt;td bgcolor=yellow&gt;&lt;font color=red&gt;红字&lt;/font&gt;黄背景&lt;/td&gt;&lt;/table&gt;
+</code></pre>
+<table><td bgcolor=yellow><font color=red>红字</font>黄背景</td></table>
+<pre><code class="language-html">&lt;center&gt;&lt;table&gt;&lt;td bgcolor=8E8E8E&gt;&lt;font size=6 face=&quot;黑体&quot;&gt;6号黑体居中(标题)&lt;/font&gt;&lt;/td&gt;&lt;/table&gt;&lt;/center&gt;
+</code></pre>
+<center><table><td bgcolor=8E8E8E><font size=6 face="黑体">6号黑体居中(标题)</font></td></table></center>
+<h3 id="10图片"><strong>10.图片</strong></h3>
+<blockquote>
+<blockquote>
+<p>原图</p>
+</blockquote>
+</blockquote>
+<pre><code class="language-html">*方式1 ![](图片地址)   
+*方式2 &lt;img src=&quot;图片地址&quot;&gt;  
+</code></pre>
+<blockquote>
+<blockquote>
+<p>指定大小</p>
+</blockquote>
+</blockquote>
+<pre><code class="language-html">&lt;img src=&quot;图片地址&quot; width=&quot;100&quot; height=&quot;100&quot; &gt;
+</code></pre>
+<p><img src="https://s2.ax1x.com/2020/02/07/1gBzEq.jpg" width="100" height="100" > #指定大小</p>
+<blockquote>
+<blockquote>
+<p>%50靠右</p>
+</blockquote>
+</blockquote>
+<pre><code class="language-html">&lt;div align=right&gt;&lt;img src=&quot;图片地址&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/div&gt; 
+</code></pre>
+<div align=right><img src="https://s2.ax1x.com/2020/02/07/1gBzEq.jpg" width="50%" height="50%"></div> 
+<blockquote>
+<blockquote>
+<p>%50大小居中</p>
+</blockquote>
+</blockquote>
+<pre><code class="language-html">&lt;div align=center&gt;&lt;img src=&quot;图片地址&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/div&gt; 
+</code></pre>
+<div align=center><img src="https://s2.ax1x.com/2020/02/07/1gBzEq.jpg" width="50%" height="50%"></div> 
+<blockquote>
+<blockquote>
+<p>%50大小靠左</p>
+</blockquote>
+</blockquote>
+<pre><code class="language-html">&lt;img src=&quot;图片地址&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;  
+</code></pre>
+<img src="https://s2.ax1x.com/2020/02/07/1gBzEq.jpg" width="50%" height="50%">  ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[网页代码片段]]></title>
+        <id>http://haofushun008.github.io/happylife/post/gridea-chang-yong-dai-ma-pian-duan/</id>
+        <link href="http://haofushun008.github.io/happylife/post/gridea-chang-yong-dai-ma-pian-duan/">
+        </link>
+        <updated>2020-02-06T08:57:27.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="全站-site">全站 Site</h3>
+<p>首页：<code>themeConfig.domain</code><br>
+站点名：<code>themeConfig.siteName</code><br>
+站点描述：<code>themeConfig.siteDescription</code><br>
+全站文章数：<code>site.posts.length</code><br>
+全站标签数：<code>site.tags.length</code></p>
+<pre><code class="language-html">共 &lt;%= site.posts.length %&gt; 篇日志
+</code></pre>
+<pre><code class="language-html">### 菜单
+  &lt;% menus.forEach(function(menu) { %&gt;
+    &lt;a href=&quot;&lt;%= menu.link %&gt;&quot;&gt;&lt;%= menu.name %&gt;&lt;/a&gt;
+&lt;% }); %&gt;   
+</code></pre>
+<h3 id="网页标题优化-sitetitle">网页标题优化 siteTitle</h3>
+<pre><code class="language-html"> &lt;code class=&quot; language-js&quot;&gt;&lt;%- include('./includes/head', { siteTitle: themeConfig.siteName }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `文章归档 | ${themeConfig.siteName}` }) %&gt;
+&lt;%- include('./includes/head', { siteTitle: `标签列表 | ${themeConfig.siteName}` }) %&gt;&lt;/code&gt; 
+</code></pre>
+<h3 id="文章-post">文章 Post</h3>
+<pre><code class="language-html">标题：`post.title`
+链接：`post.link`
+</code></pre>
+<p>文章标题：</p>
+<pre><code class="language-html"> &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;&lt;%= post.title %&gt;&lt;/a&gt; 
+</code></pre>
+<p>文章SEO</p>
+<pre><code class="language-html"> &lt;code class=&quot; language-html&quot;&gt;&lt;meta name=&quot;description&quot; content=&quot;&lt;%- post.description %&gt;&quot; /&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%- post.tags.map(tag =&gt; tag.name).join(',') %&gt;&quot; /&gt; 
+</code></pre>
+<p>发布时间：<code>post.dateFormat</code><br>
+显示相对时间：</p>
+<pre><code class="language-html"> &lt;%= site.utils.moment(post.date).locale('zh-cn').fromNow() %&gt; 
+</code></pre>
+<p>标签名：<code>post.tags</code><br>
+文章阅读时间：<code>stats.text</code> //3 min read<br>
+文章字数：<code>stats.words</code> //3000</p>
+<p>显示全部标签名，多个用顿号分开：</p>
+<pre><code class="language-html"> &lt;% post.tags.forEach(function(tag, index) { %&gt;
+    &lt;a href=&quot;&lt;%= tag.link %&gt;&quot;&gt;
+        &lt;%= tag.name %&gt;
+        &lt;% if (index !== post.tags.length - 1) { %&gt;
+            、
+        &lt;% } %&gt;
+    &lt;/a&gt;
+&lt;% }); %&gt; 
+</code></pre>
+<p>显示单个标签名：</p>
+<pre><code class="language-html">  &lt;% if (post.tags[0]) { %&gt;
+    &lt;a href=&quot;&lt;%= post.tags[0].link %&gt;&quot;&gt;&lt;%= post.tags[0].name %&gt;&lt;/a&gt;
+&lt;% }; %&gt;
+</code></pre>
+<p>封面图：<code>post.feature</code></p>
+<pre><code class="language-html">  &lt;% if (themeConfig.showFeatureImage &amp;&amp; post.feature) { %&gt;
+    &lt;img src=&quot;&lt;%= post.feature %&gt;&quot;&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>文章摘要：<code>post.abstract</code> 显示文章 <code>&lt;!--more--&gt;</code> 前的内容<br>
+文章全文：<code>post.content</code></p>
+<pre><code class="language-html">  &lt;% if (post.abstract) { %&gt;
+    &lt;%- post.abstract %&gt;
+    &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;阅读全文&lt;/a&gt;
+&lt;% }else{ %&gt;
+    &lt;%- post.content %&gt;
+    &lt;a href=&quot;&lt;%= post.link %&gt;#comments&quot;&gt;发表评论&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>结合以上两者，如果有设置more标签，则显示部分和“阅读全文”链接，若无则全文显示并显示“发表评论”链接。</p>
+<h3 id="导航-pagination">导航 Pagination</h3>
+<p>上下篇日志：</p>
+<pre><code class="language-html"> &lt;% if (post.prevPost) { %&gt;
+    &lt;a href=&quot;&lt;%= post.prevPost.link %&gt;&quot;&gt;&lt;%= post.prevPost.title %&gt;&lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (post.nextPost) { %&gt;
+    &lt;a href=&quot;&lt;%= post.nextPost.link %&gt;&quot;&gt;&lt;%= post.nextPost.title %&gt;&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<p>文章列表：</p>
+<pre><code class="language-html"> &lt;% if (pagination.prev) { %&gt;
+    &lt;a href=&quot;&lt;%= pagination.prev %&gt;&quot;&gt;上一页&lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (pagination.next) { %&gt;
+    &lt;a href=&quot;&lt;%= pagination.next %&gt;&quot;&gt;下一页&lt;/a&gt;
+&lt;% } %&gt; 
+</code></pre>
+<h3 id="实用-jquery-代码">实用 jQuery 代码</h3>
+<pre><code class="language-javascript">//新窗口打开外链
+var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*)?(?:\?([^#]*))?(?:#(.*))?$/;
+var location_href = window.location.href.replace(parse_url,'$3');
+$('.post-excerpt a:not(:has(img)),.post-content a:not(:has(img)),.author-name a').hover(function() {
+    var this_href = $(this).attr('href');
+    var replace_href = this_href.replace(parse_url,'$3');
+    if ( this_href != replace_href &amp;&amp; location_href != replace_href){$(this).attr('target','_blank');}
+}); 
+</code></pre>
 ]]></content>
     </entry>
 </feed>
