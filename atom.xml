@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://haofushun008.github.io/happylife/</id>
     <title>郝先森的日常</title>
-    <updated>2020-04-06T00:41:51.914Z</updated>
+    <updated>2020-04-06T02:09:47.909Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://haofushun008.github.io/happylife/"/>
     <link rel="self" href="https://haofushun008.github.io/happylife/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://haofushun008.github.io/happylife/images/avatar.png</logo>
     <icon>https://haofushun008.github.io/happylife/favicon.ico</icon>
     <rights>All rights reserved 2020, 郝先森的日常</rights>
+    <entry>
+        <title type="html"><![CDATA[QQ邮箱日历提醒]]></title>
+        <id>https://haofushun008.github.io/happylife/post/qq-you-xiang-ri-li-ti-xing/</id>
+        <link href="https://haofushun008.github.io/happylife/post/qq-you-xiang-ri-li-ti-xing/">
+        </link>
+        <updated>2020-04-07T01:45:26.000Z</updated>
+        <content type="html"><![CDATA[<p>偶然发现 QQ 邮箱有日历的功能，而且可以设置农历并且每年邮件 + 短信 + 微信提醒。这下重要的日子（eg:生日...）就不会忘记啦！</p>
+<h2 id="1">1.</h2>
+<center><img src="https://pic.thedoctor.top/pic/202004061576213122689.png"></center>
+<h2 id="2">2</h2>
+<center><img src="https://pic.thedoctor.top/pic/202004061576213126918.png"></center>
+<h2 id="3">3.</h2>
+<center><img src="https://pic.thedoctor.top/pic/202004061576213130774.png"></center>
+<h2 id="4">4.</h2>
+<center><img src="https://pic.thedoctor.top/pic/202004061576213134390.png"></center>
+<h2 id="5">5.</h2>
+<center><img src="https://pic.thedoctor.top/pic/202004061576213138996.png"></center>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[坚果云资源分享]]></title>
         <id>https://haofushun008.github.io/happylife/post/jian-guo-yun-zi-yuan-fen-xiang/</id>
