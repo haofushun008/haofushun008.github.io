@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://haofushun008.github.io/happylife/</id>
     <title>郝先森的日常</title>
-    <updated>2020-04-07T08:30:49.760Z</updated>
+    <updated>2020-04-08T04:14:36.325Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://haofushun008.github.io/happylife/"/>
     <link rel="self" href="https://haofushun008.github.io/happylife/atom.xml"/>
@@ -10,6 +10,63 @@
     <logo>https://haofushun008.github.io/happylife/images/avatar.png</logo>
     <icon>https://haofushun008.github.io/happylife/favicon.ico</icon>
     <rights>All rights reserved 2020, 郝先森的日常</rights>
+    <entry>
+        <title type="html"><![CDATA[抢票，他是认真的！]]></title>
+        <id>https://haofushun008.github.io/happylife/post/qiang-piao-ta-shi-ren-zhen-de/</id>
+        <link href="https://haofushun008.github.io/happylife/post/qiang-piao-ta-shi-ren-zhen-de/">
+        </link>
+        <updated>2020-04-08T03:00:18.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="一-前言">一、前言</h2>
+<blockquote>
+<p>抢票有时候真是一件困难的事情，要想成功抢到票，没点实力的技术是不行的，好在现在有很优秀的软件帮助大家抢票。</p>
+</blockquote>
+<h2 id="二-下载">二、下载</h2>
+<p>官网下载链接：<a href="http://www.12306bypass.com">http://www.12306bypass.com</a></p>
+<h2 id="三-使用">三、使用</h2>
+<p>（一）首先第一步下载软件之后，进行解压，打开</p>
+<center><img src="https://pic.thedoctor.top/pic/20200408qq1.png"></center>
+（二）第二步打开软件之后，输入账号密码，若账号密码忘了需要自行到12306官网进行修改，服务器的选的是选择默认后者离自己比较近的地方的。
+<center><img src="https://pic.thedoctor.top/pic/20200408qq2.png"></center>
+（三）软件功能的介绍以及使用:
+<p><strong>1.</strong>  首先是软件的上半部分就是一些常规的查询，比如列车班次查询，票数查询等，可以选择查询是学生票，成人票还是儿童票，查询之后，点击预定加入已选车次的行列</p>
+<center><img src="https://pic.thedoctor.top/pic/20200408qq3.png"></center>
+<p><strong>2.</strong> 软件的左下部分是进行乘客，席位的选择</p>
+<center><img src="https://pic.thedoctor.top/pic/20200408qq5.png"></center>
+<p><strong>3.</strong> 除此之外，抢到票之后通知设置目前支持一下几种通知方式，我推荐的通知方式是QQ通知，因为QQ通知你可以设置打QQ电话，这样通知会比较及时，设置方式如下图</p>
+ <center><img src="https://pic.thedoctor.top/pic/20200408qq6.png"></center>
+<p><strong>（注意事项）</strong> ：设置好了<strong>别关闭聊天窗口</strong>，如果没有选择任何通知，软件抢到票之后就会播放默认音乐）</p>
+<p><strong>4.</strong> 软件的中下部分是输出区，是软件的一些通知，比如抢到票或者多少时间刷新一次等</p>
+  <center><img src="https://pic.thedoctor.top/pic/20200408qq7.png"></center>
+<p><strong>5.</strong> 软件的右下部分是设置区，对抢票的一些设置，下面进行主要设置介绍</p>
+  <center><img src="https://pic.thedoctor.top/pic/20200408qq8.png"></center>
+<blockquote>
+<p>定时抢票：需要开通会员才能用此功能，会员20元，可以设置抢票时间，比如凌晨6点放票，你可以设置5：59就开始刷票</p>
+</blockquote>
+<blockquote>
+<p>抢票间隔：设置多久查询一次，也就是多少时间抢一次票，单位是毫秒，最低不要低于1000，但是如果在出票高峰期，可以相对应的设置低一点，大概几十秒的时间最为安全，但长期使用低于1000，可能会造成封IP的后果，我一般设置的是1100</p>
+</blockquote>
+<blockquote>
+<p>小黑屋：缓存机制，开启就行了</p>
+</blockquote>
+<blockquote>
+<p>全国CDN:分流加速抢票，开启就行了</p>
+</blockquote>
+<blockquote>
+<p>最后两个余票提交设置，按照需求进行选择</p>
+</blockquote>
+<h2 id="四-抢票小技巧">四、抢票小技巧</h2>
+<pre><code>1.整点是出票高峰期，建议在整点的时候进行手动设置抢票时间间隔，尤其是凌晨6点，一定要看准了
+
+2.建议软件和其他APP（高铁管家，行智，去哪儿）一起使用，可以增加抢到票的几率
+
+3.如果因为设置抢票时间间隔太低，而被封了IP，问题不大，挂个代理或者VPN就可以了，可以私聊我获取SSR的节点
+
+4.如果抢到的票不是你想要的席位，别退票！直接改签，直到改签到你想要的席位
+</code></pre>
+<p>免责声明：</p>
+<pre><code>本软件仅供学习交流使用，我们尊重任何版权, 请遵循相关法律法规，本站一切资源不代表本站立场，如果无意侵犯了您的合法权益，请联系我们，我们将及时处理。</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[QQ邮箱日历提醒]]></title>
         <id>https://haofushun008.github.io/happylife/post/qq-you-xiang-ri-li-ti-xing/</id>
