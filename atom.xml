@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://haofushun008.github.io/happylife/</id>
     <title>郝先森的日常</title>
-    <updated>2020-04-08T05:54:19.549Z</updated>
+    <updated>2020-04-08T07:44:01.244Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://haofushun008.github.io/happylife/"/>
     <link rel="self" href="https://haofushun008.github.io/happylife/atom.xml"/>
@@ -30,6 +30,11 @@
 <blockquote>
 <p>抢票有时候真是一件困难的事情，要想成功抢到票，没点实力的技术是不行的，好在现在有很优秀的软件帮助大家抢票。</p>
 </blockquote>
+<p><strong>意味深长的音频：</strong></p>
+ <!-- 嵌入音频 -->
+<audio src="https://pic.thedoctor.top/music/12306bypas.mp3" controls="controls" loop="loop" autoplay="true"> 
+        HTML5 audio not supported
+ </audio>
 <h2 id="二-下载">二、下载</h2>
 <p>官网下载链接：<a href="http://www.12306bypass.com">http://www.12306bypass.com</a></p>
 <h2 id="三-使用">三、使用</h2>
@@ -44,7 +49,7 @@
 <center><img src="https://pic.thedoctor.top/pic/20200408qq5.png"></center>
 <p><strong>3.</strong> 除此之外，抢到票之后通知设置目前支持一下几种通知方式，我推荐的通知方式是QQ通知，因为QQ通知你可以设置打QQ电话，这样通知会比较及时，设置方式如下图</p>
  <center><img src="https://pic.thedoctor.top/pic/20200408qq6.png"></center>
-<p><strong>（注意事项）</strong> ：设置好了<strong>别关闭聊天窗口</strong>，如果没有选择任何通知，软件抢到票之后就会播放默认音乐</p>
+<p><strong>（注意事项）</strong> ：设置好了<strong>别关闭聊天窗口</strong>，如果没有选择任何通知，软件抢到票之后就会播放默认音乐---<strong>文章开头的音频</strong></p>
 <p><strong>4.</strong> 软件的中下部分是输出区，是软件的一些通知，比如抢到票或者多少时间刷新一次等</p>
   <center><img src="https://pic.thedoctor.top/pic/20200408qq7.png"></center>
 <p><strong>5.</strong> 软件的右下部分是设置区，对抢票的一些设置，下面进行主要设置介绍</p>
