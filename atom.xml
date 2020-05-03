@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://haofushun008.github.io/happylife/</id>
     <title>郝先森的日常</title>
-    <updated>2020-04-13T06:32:34.563Z</updated>
+    <updated>2020-05-03T14:15:27.392Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://haofushun008.github.io/happylife/"/>
     <link rel="self" href="https://haofushun008.github.io/happylife/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://haofushun008.github.io/happylife/images/avatar.png</logo>
     <icon>https://haofushun008.github.io/happylife/favicon.ico</icon>
     <rights>All rights reserved 2020, 郝先森的日常</rights>
+    <entry>
+        <title type="html"><![CDATA[酸酸乳SSR节点使用]]></title>
+        <id>https://haofushun008.github.io/happylife/post/suan-suan-ru-ssr-jie-dian-shi-yong/</id>
+        <link href="https://haofushun008.github.io/happylife/post/suan-suan-ru-ssr-jie-dian-shi-yong/">
+        </link>
+        <updated>2020-04-13T06:54:11.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="shadowsocksr客户端">ShadowsocksR客户端</h2>
+<blockquote>
+<p>Windows用户比较多，这里以Windows版客户端举例，其他平台同理</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[免费虚拟主机分享]]></title>
         <id>https://haofushun008.github.io/happylife/post/mian-fei-xu-ni-zhu-ji-fen-xiang/</id>
@@ -464,109 +476,5 @@ public static void main(String[] args){
 <pre><code class="language-html">&lt;img src=&quot;图片地址&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;  
 </code></pre>
 <img src="https://s2.ax1x.com/2020/02/07/1gBzEq.jpg" width="50%" height="50%">  ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[网页代码片段]]></title>
-        <id>https://haofushun008.github.io/happylife/post/gridea-chang-yong-dai-ma-pian-duan/</id>
-        <link href="https://haofushun008.github.io/happylife/post/gridea-chang-yong-dai-ma-pian-duan/">
-        </link>
-        <updated>2020-02-06T08:57:27.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="全站-site">全站 Site</h3>
-<p>首页：<code>themeConfig.domain</code><br>
-站点名：<code>themeConfig.siteName</code><br>
-站点描述：<code>themeConfig.siteDescription</code><br>
-全站文章数：<code>site.posts.length</code><br>
-全站标签数：<code>site.tags.length</code></p>
-<pre><code class="language-html">共 &lt;%= site.posts.length %&gt; 篇日志
-</code></pre>
-<pre><code class="language-html">### 菜单
-  &lt;% menus.forEach(function(menu) { %&gt;
-    &lt;a href=&quot;&lt;%= menu.link %&gt;&quot;&gt;&lt;%= menu.name %&gt;&lt;/a&gt;
-&lt;% }); %&gt;   
-</code></pre>
-<h3 id="网页标题优化-sitetitle">网页标题优化 siteTitle</h3>
-<pre><code class="language-html"> &lt;code class=&quot; language-js&quot;&gt;&lt;%- include('./includes/head', { siteTitle: themeConfig.siteName }) %&gt;
-&lt;%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %&gt;
-&lt;%- include('./includes/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %&gt;
-&lt;%- include('./includes/head', { siteTitle: `文章归档 | ${themeConfig.siteName}` }) %&gt;
-&lt;%- include('./includes/head', { siteTitle: `标签列表 | ${themeConfig.siteName}` }) %&gt;&lt;/code&gt; 
-</code></pre>
-<h3 id="文章-post">文章 Post</h3>
-<pre><code class="language-html">标题：`post.title`
-链接：`post.link`
-</code></pre>
-<p>文章标题：</p>
-<pre><code class="language-html"> &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;&lt;%= post.title %&gt;&lt;/a&gt; 
-</code></pre>
-<p>文章SEO</p>
-<pre><code class="language-html"> &lt;code class=&quot; language-html&quot;&gt;&lt;meta name=&quot;description&quot; content=&quot;&lt;%- post.description %&gt;&quot; /&gt;
-&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%- post.tags.map(tag =&gt; tag.name).join(',') %&gt;&quot; /&gt; 
-</code></pre>
-<p>发布时间：<code>post.dateFormat</code><br>
-显示相对时间：</p>
-<pre><code class="language-html"> &lt;%= site.utils.moment(post.date).locale('zh-cn').fromNow() %&gt; 
-</code></pre>
-<p>标签名：<code>post.tags</code><br>
-文章阅读时间：<code>stats.text</code> //3 min read<br>
-文章字数：<code>stats.words</code> //3000</p>
-<p>显示全部标签名，多个用顿号分开：</p>
-<pre><code class="language-html"> &lt;% post.tags.forEach(function(tag, index) { %&gt;
-    &lt;a href=&quot;&lt;%= tag.link %&gt;&quot;&gt;
-        &lt;%= tag.name %&gt;
-        &lt;% if (index !== post.tags.length - 1) { %&gt;
-            、
-        &lt;% } %&gt;
-    &lt;/a&gt;
-&lt;% }); %&gt; 
-</code></pre>
-<p>显示单个标签名：</p>
-<pre><code class="language-html">  &lt;% if (post.tags[0]) { %&gt;
-    &lt;a href=&quot;&lt;%= post.tags[0].link %&gt;&quot;&gt;&lt;%= post.tags[0].name %&gt;&lt;/a&gt;
-&lt;% }; %&gt;
-</code></pre>
-<p>封面图：<code>post.feature</code></p>
-<pre><code class="language-html">  &lt;% if (themeConfig.showFeatureImage &amp;&amp; post.feature) { %&gt;
-    &lt;img src=&quot;&lt;%= post.feature %&gt;&quot;&gt;
-&lt;% } %&gt; 
-</code></pre>
-<p>文章摘要：<code>post.abstract</code> 显示文章 <code>&lt;!--more--&gt;</code> 前的内容<br>
-文章全文：<code>post.content</code></p>
-<pre><code class="language-html">  &lt;% if (post.abstract) { %&gt;
-    &lt;%- post.abstract %&gt;
-    &lt;a href=&quot;&lt;%= post.link %&gt;&quot;&gt;阅读全文&lt;/a&gt;
-&lt;% }else{ %&gt;
-    &lt;%- post.content %&gt;
-    &lt;a href=&quot;&lt;%= post.link %&gt;#comments&quot;&gt;发表评论&lt;/a&gt;
-&lt;% } %&gt; 
-</code></pre>
-<p>结合以上两者，如果有设置more标签，则显示部分和“阅读全文”链接，若无则全文显示并显示“发表评论”链接。</p>
-<h3 id="导航-pagination">导航 Pagination</h3>
-<p>上下篇日志：</p>
-<pre><code class="language-html"> &lt;% if (post.prevPost) { %&gt;
-    &lt;a href=&quot;&lt;%= post.prevPost.link %&gt;&quot;&gt;&lt;%= post.prevPost.title %&gt;&lt;/a&gt;
-&lt;% } %&gt;
-&lt;% if (post.nextPost) { %&gt;
-    &lt;a href=&quot;&lt;%= post.nextPost.link %&gt;&quot;&gt;&lt;%= post.nextPost.title %&gt;&lt;/a&gt;
-&lt;% } %&gt; 
-</code></pre>
-<p>文章列表：</p>
-<pre><code class="language-html"> &lt;% if (pagination.prev) { %&gt;
-    &lt;a href=&quot;&lt;%= pagination.prev %&gt;&quot;&gt;上一页&lt;/a&gt;
-&lt;% } %&gt;
-&lt;% if (pagination.next) { %&gt;
-    &lt;a href=&quot;&lt;%= pagination.next %&gt;&quot;&gt;下一页&lt;/a&gt;
-&lt;% } %&gt; 
-</code></pre>
-<h3 id="实用-jquery-代码">实用 jQuery 代码</h3>
-<pre><code class="language-javascript">//新窗口打开外链
-var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*)?(?:\?([^#]*))?(?:#(.*))?$/;
-var location_href = window.location.href.replace(parse_url,'$3');
-$('.post-excerpt a:not(:has(img)),.post-content a:not(:has(img)),.author-name a').hover(function() {
-    var this_href = $(this).attr('href');
-    var replace_href = this_href.replace(parse_url,'$3');
-    if ( this_href != replace_href &amp;&amp; location_href != replace_href){$(this).attr('target','_blank');}
-}); 
-</code></pre>
-]]></content>
     </entry>
 </feed>
